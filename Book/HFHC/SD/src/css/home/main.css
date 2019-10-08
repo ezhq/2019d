@@ -1,0 +1,22 @@
+h1 {
+    color: gold;
+}
+
+p {
+    color: antiquewhite;
+}
+
+#slogan {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 50%;
+    margin: 0 50%;
+    transform: translateX(-50%);
+}
+
+.main-space {
+    text-align: center;
+}

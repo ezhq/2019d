@@ -1,0 +1,23 @@
+body {
+    background-color: #d2b48c;
+    margin: 5% 10%;
+    border: 2px solid antiquewhite;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+img {
+    width: 80%;
+}
+
+a {
+    /* background-color: darkgoldenrod; */
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: darkgoldenrod;
+}
+
