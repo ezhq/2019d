@@ -105,15 +105,15 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
-express3-handlebars@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/express3-handlebars/-/express3-handlebars-0.5.2.tgz#953a8c2f643fdcd4ef1c75f7a1bccd01930ac18c"
-  integrity sha1-lTqML2Q/3NTvHHX3obzNAZMKwYw=
+express3-handlebars@^0.4.0:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/express3-handlebars/-/express3-handlebars-0.4.1.tgz#bc8c72fccd48586fcdabb00b6a74a86bf52df48c"
+  integrity sha1-vIxy/M1IWG/Nq7ALanSoa/Ut9Iw=
   dependencies:
     async "~0.2"
     glob "3.x"
     handlebars "1.x"
-    semver "2.x"
+    semver "1.x"
 
 express@^4.17.1:
   version "4.17.1"
@@ -357,10 +357,10 @@ safe-buffer@5.1.2:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-semver@2.x:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-2.3.2.tgz#b9848f25d6cf36333073ec9ef8856d42f1233e52"
-  integrity sha1-uYSPJdbPNjMwc+ye+IVtQvEjPlI=
+semver@1.x:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-1.1.4.tgz#2e5a4e72bab03472cc97f72753b4508912ef5540"
+  integrity sha1-LlpOcrqwNHLMl/cnU7RQiRLvVUA=
 
 send@0.17.1:
   version "0.17.1"
