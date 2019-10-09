@@ -26,8 +26,15 @@ app.set('view engine', 'handlebars')
 app.set('port', process.env.PORT || 4000)
 
 /**** 路由配置 ****/
-// 中间件（static）
+// 中间件-默认路径设置（static）
 app.use(express.static(__dirname + '/public'))
+
+// 中间件-字符串查询
+app.use((req, res, next) => {
+    res.locals.showTests = app.get('env') !== 'production' && req.query.test === '1'
+    next()
+})
+
 
 // 路由-主页
 app.get('/', (req, res) => {
@@ -38,7 +45,10 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     // let randowmWord = words[Math.floor(Math.random() * words.length)]
 
-    res.render('about', {quote: quote.getQuote()})
+    res.render('about', {
+        quote: quote.getQuote(),
+        pageTestScript: '/qa/tests-about.js'
+    })
 })
 
 
