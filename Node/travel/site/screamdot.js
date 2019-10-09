@@ -1,16 +1,17 @@
 /******** 依赖区 ********/
 let express = require('express')
+let quote = require('./lib/quote.js')
 
 /******** 扩展工具区 ********/
 const log = console.log.bind(console)
 
 /******** 数据区 ********/
-let words = [
-    'Alice line.',
-    'Bob line.',
-    'Charry line.',
-    'Docker line.',
-]
+// let words = [
+//     'Alice line.',
+//     'Bob line.',
+//     'Charry line.',
+//     'Docker line.',
+// ]
 
 
 /******** 函数区 ********/
@@ -35,9 +36,9 @@ app.get('/', (req, res) => {
 
 // 路由-关于
 app.get('/about', (req, res) => {
-    let randowmWord = words[Math.floor(Math.random() * words.length)]
+    // let randowmWord = words[Math.floor(Math.random() * words.length)]
 
-    res.render('about', {words: randowmWord})
+    res.render('about', {quote: quote.getQuote()})
 })
 
 
