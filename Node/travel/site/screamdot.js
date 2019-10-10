@@ -18,7 +18,7 @@ const log = console.log.bind(console)
 let app = express()
 
 // 设置-HandleBar视图引擎
-let handlebars = require('express3-handlebars').create({ defaultLayout: 'main'})
+let handlebars = require('express3-handlebars').create({ defaultLayout: 'main' })
 app.engine('handlebars', handlebars.engine)
 app.set('view engine', 'handlebars')
 
@@ -35,7 +35,6 @@ app.use((req, res, next) => {
     next()
 })
 
-
 // 路由-主页
 app.get('/', (req, res) => {
     res.render('home')
@@ -51,12 +50,23 @@ app.get('/about', (req, res) => {
     })
 })
 
+// 路由-河流
+app.get('/tours/river', (req, res) => {
+    res.render('tours/river')
+})
+
+// 路由-河流-表单
+app.get('/tours/request-group-rate', (req, res) => {
+    res.render('tours/request-group-rate')
+})
 
 // 路由-404: catch-all处理器(中间件)
 app.use((req, res, next) => {
     res.status(404)
     res.render('404')
 })
+
+// 
 
 // 路由-500
 app.use((err, req, res, next) => {
